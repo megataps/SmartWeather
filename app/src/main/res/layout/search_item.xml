@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="@string/search.date"
+        android:textColor="@color/main_text_color" />
+
+    <TextView
+        android:id="@+id/avgTemperatureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTextView"
+        android:textColor="@color/main_text_color"
+        android:text="@string/search.average_temperature" />
+
+    <TextView
+        android:id="@+id/pressureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avgTemperatureTextView"
+        android:textColor="@color/main_text_color"
+        android:text="@string/search.pressure" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressureTextView"
+        android:textColor="@color/main_text_color"
+        android:text="@string/search.humidity" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidityTextView"
+        android:textColor="@color/main_text_color"
+        android:text="@string/search.description" />
+</RelativeLayout>

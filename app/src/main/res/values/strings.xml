@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Common -->
+    <string name="common.ok">"OK"</string>
+    <string name="common.cancel">"Cancel"</string>
+    <string name="common.close">"Close"</string>
+    <string name="common.note">"Note"</string>
+    <string name="common.try_again">"Try again"</string>
+    <string name="common.error.default">"An error has occurred. Please try again."</string>
+    <string name="common.error.no_internet">"Could not connect to Open Weather Map"</string>
+
+    <!-- Search screen -->
+    <string name="search.hint">"Search"</string>
+    <string name="search.icon">"Search Icon"</string>
+    <string name="search.empty_message"><![CDATA[No weather forecast found with the above keywords <b>\"%1$s\"</b>]]></string>
+    <string name="search.get_weather">"Get Weather"</string>
+    <string name="search.date">"Date: %1$s"</string>
+    <string name="search.average_temperature">"Average Temperature: %1$s°C"</string>
+    <string name="search.pressure">"Pressure: %1$s"</string>
+    <string name="search.humidity">"Humidity: %1$s"</string>
+    <string name="search.description">"Description: %1$s"</string>
+
+    <!-- Alert-->
+    <string name="rooting_device_message">"Rooted devices are restricted."</string>
+
+</resources>
