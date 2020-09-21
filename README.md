@@ -47,6 +47,7 @@ This project implemented MVVM architecture using Koin, RxJava, Retrofit, LiveDat
 ### Caching
 - It's a cache mechanism provide by OKHttp library
 - It's support cache for offline mode and reduce network request connection
+
 Example:
 ```
   class CacheInterceptor(
@@ -87,7 +88,7 @@ Example:
 ```
 
 ### Dependency Injection
-- This project will use Koin as a Dependency Injection framework.
+- It's use Koin as a Dependency Injection framework.
 - It's include 4 modules:
     - **networkModule**        *Provide instance of HTTP Client, Retrofit, Caching, Json parser*
     - **apiModule**            *Provide Api interface*
@@ -132,7 +133,6 @@ More detail at: https://github.com/scottyab/rootbeer
 
 - **JUnit**
 
-
 <br>
 
 # Checklists:
@@ -145,7 +145,10 @@ More detail at: https://github.com/scottyab/rootbeer
 - [x] Exception handling
 - [x] Caching handling
 - [ ] Secure Android app from:
-    - [x] Decompile APK                      *Configuration in Gradle build*
-    - [x] Rooted device                      *Using RootBeer library*
-    - [x] Data transmission via network          *Using Https*
-    - [ ] Encryption for sensitive information   *Just put secret key into gradle properties file*
+    - [x] Decompile APK                          - *Configuration in Gradle build*
+    - [x] Rooted device                          - *Using RootBeer library*
+    - [x] Data transmission via network          - *Using Https*
+    - [ ] Encryption for sensitive information   - *Just put secret key into gradle properties file*
+- [ ] Accessibility for Disability Supports:
+    - [x] Talkback: *Use a screen reader.*
+    - [x] Scaling Text: *Display size and font size: To change the size of items on your screen, adjust the display size or font size.*
