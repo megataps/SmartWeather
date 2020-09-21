@@ -14,6 +14,7 @@ This is a simple application that allows search weather based on  https://openwe
  - [Local datasource(DAO)](#dao)
  - [Caching](#caching)
  - [Dependency Injection](#di)
+ - [Exception](#exception)
  
 [Main Libraries Used](#main_lib)
 - [Development](#development)
@@ -126,6 +127,17 @@ Example:
     - **viewModelModule**      *Provide ViewModel instance*
 
 
+### <a name="exception"></a>Exception
+- It's define all exceptions that used in the project.
+
+Example:
+```
+class NetworkException(
+    throwable: Throwable
+) : RuntimeException(throwable)
+
+```
+
 <br>
 
 ### Unit testing
@@ -189,6 +201,7 @@ More detail at: https://github.com/scottyab/rootbeer
 <br>
 
 # <a name="build_guide"></a>How to Build & Deploy to devices
+This simple app use gradle for build and deploy. But keep in mind that, It's should use CI/CD for real project to speed up our performance.
 
 -  Setup Android SDK & Gradle
 -  Install Android Build Tools version 30.0.2
