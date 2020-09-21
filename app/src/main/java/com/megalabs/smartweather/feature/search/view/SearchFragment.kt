@@ -60,7 +60,6 @@ class SearchFragment: BaseFragment(R.layout.fragment_search), SearchAdapterListe
                 }
             )
 
-
         viewModel.dailyForecastMutableLiveData
             .observe(this) {
                 when (it) {
@@ -125,6 +124,7 @@ class SearchFragment: BaseFragment(R.layout.fragment_search), SearchAdapterListe
     }
 
     fun clearSearch() {
+        emptyContainerView.visibility = View.GONE
         searchAdapter.items = emptyList()
         searchAdapter.notifyDataSetChanged()
     }
