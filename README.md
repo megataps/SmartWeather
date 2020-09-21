@@ -55,16 +55,16 @@ This project implemented MVVM architecture using Koin, RxJava, Retrofit, LiveDat
 
 ### <a name="viewmodel"></a>ViewModel
 - It's handle all UI's business, such as proceed an user's action, control loading flow,...
-- It's contain LiveData that will be register by View(Activity/Fragment)
+- It contains LiveData that will be registered by View(Activity/Fragment)
 
 ### <a name="interactor"></a>Interactor:
 - It's the main layer to handle all data business
 - All interactor **MUST** be defined with an interface, ViewModels communicate with interactor through by the interface
 
 ### <a name="repository"></a>Repository
-- The main data source of app that is used by Interactor layer
-- It contains a little bit business rules to branch data source that should be used, from remove or local database
-- All repositories **MUST** be defined with an interface, interactor communicate with repository through by the interface 
+- The main data source of the app that is used by the Interactor layer
+- It contains a few business rules to a branch data source that should be used, from remove or local database
+- All repositories **MUST** be defined with an interface, interactor communicate with the repository through by the interface 
 
 ### <a name="api"></a>Remote datasource (Api)
 - It's data source layer that data is fetched from RestFul API
@@ -75,8 +75,8 @@ This project implemented MVVM architecture using Koin, RxJava, Retrofit, LiveDat
 - All DAOs **MUST** be defined with an interface, repository communicate with Dao through by the interface 
 
 ### <a name="caching"></a>Caching
-- It's a cache mechanism provide by OKHttp library
-- It's support cache for offline mode and reduce network request connection
+- It's a cache mechanism provide by the OKHttp library
+- It's support cache for offline mode and reduces network request connection
 
 Example:
 ```
@@ -89,7 +89,7 @@ Example:
 
         if (isNetworkAvailable(context)) {
             /*
-            *  If there is Internet, get the cache that was stored 60 seconds ago.
+            *  If there is the Internet, get the cache that was stored 60 seconds ago.
             *  If the cache is older than 60 seconds, then discard it,
             *  and indicate an error in fetching the response.
             *  The 'max-age' attribute is responsible for this behavior.
@@ -148,25 +148,25 @@ class NetworkException(
 
 ## <a name="development"></a>Development
 - **OkHttp**: HTTP is the way modern applications network. It’s how we exchange data & media. Doing HTTP efficiently makes your stuff load faster and saves bandwidth.
-More detail at: https://github.com/square/okhttp/
+More detail at https://github.com/square/okhttp/
 
 - **Moshi**: Moshi is a modern JSON library for Android and Java. It makes it easy to parse JSON into Java objects
-More detail at: https://github.com/square/moshi/
+More detail at https://github.com/square/moshi/
 
 - **Retrofit** -  https://square.github.io/retrofit/
 
 - **RxJava3** - https://github.com/ReactiveX/RxJava
 
 - **Koin**: A pragmatic lightweight dependency injection framework for Kotlin developers. Written in pure Kotlin, using functional resolution only: no proxy, no code generation, no reflection.
-More detail at: https://insert-koin.io/
+More detail at https://insert-koin.io/
 
 - **Rxbinding**: RxJava binding APIs for Android UI widgets from the platform and support libraries.
-More detail at: https://github.com/JakeWharton/RxBinding
+More detail at https://github.com/JakeWharton/RxBinding
 
 - **Material Dialogs** - https://github.com/afollestad/material-dialogs
 
-- **Root checker**: The library for checking is a device has been rooted or not.
-More detail at: https://github.com/scottyab/rootbeer
+- **Root checker**: The library for checking is a device that has been rooted or not.
+More detail at https://github.com/scottyab/rootbeer
 
 ## <a name="testing"></a>Testing
 
@@ -196,12 +196,12 @@ More detail at: https://github.com/scottyab/rootbeer
     - [ ] Encryption for sensitive information   - *Just put secret key into gradle properties file*
 - [ ] Accessibility for Disability Supports:
     - [x] Talkback: *Use a screen reader.*
-    - [x] Scaling Text: *Display size and font size: To change the size of items on your screen, adjust the display size or font size.*
+    - [x] Scaling Text: *Display size and font-size: To change the size of items on your screen, adjust the display size or font size.*
 
 <br>
 
 # <a name="build_guide"></a>How to Build & Deploy to devices
-This simple app use gradle for build and deploy. But keep in mind that, It's should use CI/CD for real project to speed up our performance.
+This simple app uses Gradle to build and deploy. But keep in mind that, It's should use CI/CD for the real projects to speed up our performance.
 
 -  Setup Android SDK & Gradle
 -  Install Android Build Tools version 30.0.2
