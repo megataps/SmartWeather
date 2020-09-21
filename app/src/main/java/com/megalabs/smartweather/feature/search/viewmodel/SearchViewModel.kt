@@ -23,7 +23,6 @@ class SearchViewModel(
     var dailyForecast: DailyForecast? = null
 
     fun dailyForecast(keyword: String) {
-        Timber.e("LLLNNN>>>dailyForecast")
         addToDisposable(interactor.getDailyForecast(keyword).with(schedulerProvider)
             .doOnError(Timber::e)
             .doOnSubscribe { showLoading() }

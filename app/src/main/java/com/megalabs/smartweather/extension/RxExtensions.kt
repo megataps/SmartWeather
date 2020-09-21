@@ -37,7 +37,6 @@ fun <T> Flowable<T>.countItems(): Flowable<Pair<T, Int>> =
 fun <T> Single<T>.retryWhenNoInternet(): Single<T> =
     this.retryWhen {errors ->
         errors.flatMap {error ->
-            Timber.e("LLLNNN>>>retryWhenNoInternet: error: $error")
             if (error is NetworkException || error is MaxRetriesExceededException) {
                 NetworkRetryHandler().askNetworkingAvailable(error)
                     .subscribeOn(AndroidSchedulers.mainThread())

@@ -13,7 +13,6 @@ class SearchInteractorImpl(
 ): SearchInteractor, BaseInteractor() {
 
     override fun getDailyForecast(keyword: String): Single<DailyForecast> {
-        Timber.e("LLLNNN>>>SearchInteractorImpl>>>>getDailyForecast")
         val searchCriteriaMap: MutableMap<String, String> = mutableMapOf()
         searchCriteriaMap["q"] = keyword
         // TODO: The maximum of result is just 17 items

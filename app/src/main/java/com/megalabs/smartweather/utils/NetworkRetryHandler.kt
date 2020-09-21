@@ -16,7 +16,6 @@ import timber.log.Timber
 class NetworkRetryHandler: KoinComponent {
 
     fun askNetworkingAvailable(error: Throwable): Flowable<String> {
-        Timber.e("LLLNNN>>>askNetworkingAvailable")
         return Flowable.create({ emitter ->
             val dialog = MaterialDialog(getRunningActivity()!!)
                 .customView(
