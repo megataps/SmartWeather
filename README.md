@@ -1,7 +1,9 @@
 # SmartWeather
 This is a simple application that allows search weather based on  https://openweathermap.org/
 
-Table of Contents
+<br>
+
+#Table of Contents
 
 [Requirements](#requirements)
 
