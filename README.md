@@ -152,3 +152,52 @@ More detail at: https://github.com/scottyab/rootbeer
 - [ ] Accessibility for Disability Supports:
     - [x] Talkback: *Use a screen reader.*
     - [x] Scaling Text: *Display size and font size: To change the size of items on your screen, adjust the display size or font size.*
+
+<br>
+
+# How to Build & Deploy to devices
+
+-  Setup Android SDK & Gradle
+-  Install Android Build Tools version 30.0.2
+
+## Build
+ - Build for Dev:
+    ```
+    ./build.sh qc
+    ```
+
+- Build for Production
+    ```
+    ./build.sh prod
+    ```
+
+- Output files are in: SmartWeather/build/outputs/apk folder
+
+## Deploy: Install to device:
+
+- Dev:
+    ```
+    ./install.sh dev debug
+    ./install.sh dev release
+    ```
+
+- Production:
+    ```
+    ./install.sh prod debug
+    ./install.sh prod release
+    ```
+
+#Screenshots
+![Screenshot_1600658348](https://user-images.githubusercontent.com/7032500/93730828-89c1e880-fbf4-11ea-8f54-7dbadf355a0e.png)
+
+![Screenshot_1600658345](https://user-images.githubusercontent.com/7032500/93730836-90506000-fbf4-11ea-812c-70f76d2c76e5.png)
+
+![Screenshot_1600658359](https://user-images.githubusercontent.com/7032500/93730817-82024400-fbf4-11ea-82bf-1bd3bf3d801f.png)
+
+![Screenshot_1600658551](https://user-images.githubusercontent.com/7032500/93730796-6b5bed00-fbf4-11ea-8c80-d157f4af561a.png) | 
+
+![Screenshot_1600658422](https://user-images.githubusercontent.com/7032500/93730811-7c0c6300-fbf4-11ea-8549-6ecf33ab0217.png) 
+
+![Screenshot_1600658442](https://user-images.githubusercontent.com/7032500/93730802-74e55500-fbf4-11ea-843e-6df697b25a8d.png)
+
+
