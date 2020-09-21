@@ -1,11 +1,7 @@
 # SmartWeather
 This is a simple application that allows search weather based on  https://openweathermap.org/
 
-[Requirements](#requirements)
 
-[Architecture](#architecture)
-
-[Code Structure](#code_structure)
  - [View](#view)
  - [ViewModel](#viewmodel)
  - [Interactor](#interactor)
@@ -29,14 +25,15 @@ This is a simple application that allows search weather based on  https://openwe
 
 <br>
 
-# <a name="requirements" />Requirements
+# <a name="requirements"></a>Requirements
+
 - **Language**: Kotlin
 - **IDE**: Android Studio 4.0.1
 - **Android version**: Android 5.0 Lollipop or higher.
 
 <br>
 
-# <a name="architecture" />Architecture
+# <a name="architecture"></a>Architecture
 
 This project implemented MVVM architecture using Koin, RxJava, Retrofit, LiveData. 
 
@@ -44,35 +41,35 @@ This project implemented MVVM architecture using Koin, RxJava, Retrofit, LiveDat
 
 <br>
 
-# <a name="code_structure" />Code Structure:
+# <a name="code_structure"></a>Code Structure:
 
-### <a name="view" />View
+### <a name="view"></a>View
 - It's the Activity/Fragment 
 - It's handle all actions/inputs from user
 - It can reference to multiple ViewModel to handle business, but less is better.
 
-### <a name="viewmodel" />ViewModel
+### <a name="viewmodel"></a>ViewModel
 - It's handle all UI's business, such as proceed an user's action, control loading flow,...
 - It's contain LiveData that will be register by View(Activity/Fragment)
 
-### <a name="interactor" />Interactor:
+### <a name="interactor"></a>Interactor:
 - It's the main layer to handle all data business
 - All interactor **MUST** be defined with an interface, ViewModels communicate with interactor through by the interface
 
-### <a name="repository" />Repository
+### <a name="repository"></a>Repository
 - The main data source of app that is used by Interactor layer
 - It contains a little bit business rules to branch data source that should be used, from remove or local database
 - All repositories **MUST** be defined with an interface, interactor communicate with repository through by the interface 
 
-### <a name="api" />Remote datasource (Api)
+### <a name="api"></a>Remote datasource (Api)
 - It's data source layer that data is fetched from RestFul API
 - It's use Retrofit to turn HTTP API into a Kotlin interface.
 
-### <a name="dao" />Local datasource(DAO)
+### <a name="dao"></a>Local datasource(DAO)
 - It's data source layer that data is fetched from local storage (file, sqlite, ...)
 - All DAOs **MUST** be defined with an interface, repository communicate with Dao through by the interface 
 
-### <a name="caching" />Caching
+### <a name="caching"></a>Caching
 - It's a cache mechanism provide by OKHttp library
 - It's support cache for offline mode and reduce network request connection
 
@@ -115,7 +112,7 @@ Example:
 }
 ```
 
-### <a name="di" />Dependency Injection
+### <a name="di"></a>Dependency Injection
 - It's use Koin as a Dependency Injection framework.
 - It's include 4 modules:
     - **networkModule**        *Provide instance of HTTP Client, Retrofit, Caching, Json parser*
@@ -131,9 +128,9 @@ Example:
 
 ### Instrumented testing
 
-# <a name="main_lib" />Main Libraries Used
+# <a name="main_lib"></a>Main Libraries Used
 
-## <a name="development" />Development
+## <a name="development"></a>Development
 - **OkHttp**: HTTP is the way modern applications network. It’s how we exchange data & media. Doing HTTP efficiently makes your stuff load faster and saves bandwidth.
 More detail at: https://github.com/square/okhttp/
 
@@ -155,7 +152,7 @@ More detail at: https://github.com/JakeWharton/RxBinding
 - **Root checker**: The library for checking is a device has been rooted or not.
 More detail at: https://github.com/scottyab/rootbeer
 
-## <a name="testing" />Testing
+## <a name="testing"></a>Testing
 
 - **MockWebServer** - https://github.com/square/okhttp/tree/master/mockwebserver
 
@@ -167,7 +164,7 @@ More detail at: https://github.com/scottyab/rootbeer
 
 <br>
 
-# <a name="checklists" />Checklists:
+# <a name="checklists"></a>Checklists:
 - [x] Programming language: Kotlin is required, Java is optional.
 - [x] Design app's architecture (suggest MVVM)
 - [x] Apply LiveData mechanism
@@ -187,12 +184,12 @@ More detail at: https://github.com/scottyab/rootbeer
 
 <br>
 
-# <a name="build_guide" />How to Build & Deploy to devices
+# <a name="build_guide"></a>How to Build & Deploy to devices
 
 -  Setup Android SDK & Gradle
 -  Install Android Build Tools version 30.0.2
 
-## <a name="build" />Build
+## <a name="build"></a>Build
  - Build for Dev:
     ```
     ./build.sh qc
@@ -212,7 +209,7 @@ More detail at: https://github.com/scottyab/rootbeer
         - **SmartWeather/app/build/reports/androidTests/connected/flavors/DEV/index.html**
         - **SmartWeather/app/build/reports/androidTests/connected/flavors/PROD/index.html**
 
-## <a name="deploy" />Deploy: Install to device:
+## <a name="deploy"></a>Deploy: Install to device:
 
 - Dev:
     ```
@@ -228,7 +225,7 @@ More detail at: https://github.com/scottyab/rootbeer
 
 <br>
 
-# <a name="screenshots" />Screenshots
+# <a name="screenshots"></a>Screenshots
 
 <table>
   <tr>
