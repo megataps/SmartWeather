@@ -1,9 +1,15 @@
 # SmartWeather
 This is a simple application that allows search weather based on  https://openweathermap.org/
 
+[Requirements](#requirements)
+
+[Architecture](#architecture)
+
+[Code Structure](#code_structure)
+
 <br>
 
-# Requirements
+# <a name="requirements"></a>Requirements
 - **Language**: Kotlin
 - **IDE**: Android Studio 4.0.1
 - **Android version**: Android 5.0 Lollipop or higher.
