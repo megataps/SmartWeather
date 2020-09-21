@@ -8,7 +8,7 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import timber.log.Timber
 
-// TODO:
+// TODO: Support MultiDex
 // https://developer.android.com/studio/build/multidex#keep
 class SmartWeatherApp: MultiDexApplication() {
 

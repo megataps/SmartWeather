@@ -9,31 +9,6 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class ApplicationTest {
 
-//    lateinit var instrumentationContext: Context
-
-//    @Before()
-//    fun before() {
-//        instrumentationContext = InstrumentationRegistry.getInstrumentation().context
-//        startKoin {
-//            androidLogger(Level.DEBUG)
-//            androidContext(instrumentationContext)
-//            modules(weatherAppModule)
-//        }
-//        loadKoinModules(weatherAppModule)
-//    }
-
-//    @After
-//    fun after() {
-//        stopKoin()
-//    }
-
-//    @Test
-//    fun testLoadFragment() {
-//        val scenario = launchFragmentInContainer<SearchFragment>()
-//        scenario.recreate()
-//        Espresso.onView(withId(R.id.getWeatherButton)).perform(ViewActions.click())
-//    }
-
     @Test
     fun useAppContext() {
         // Context of the app under test.

@@ -130,7 +130,8 @@ public class TestSubscriberEx<T>
                         }
                         completions++;
                     } catch (Throwable ex) {
-                        // Exceptions.throwIfFatal(e); TODO add fatal exceptions?
+                        // Exceptions.throwIfFatal(e);
+                        // TODO: add fatal exceptions?
                         errors.add(ex);
                     }
                     return;
@@ -171,7 +172,8 @@ public class TestSubscriberEx<T>
                     values.add(t);
                 }
             } catch (Throwable ex) {
-                // Exceptions.throwIfFatal(e); TODO add fatal exceptions?
+                // TODO: add fatal exceptions?
+                // Exceptions.throwIfFatal(e);
                 errors.add(ex);
                 qs.cancel();
             }
