@@ -84,7 +84,6 @@ android {
             dimension "app"
 
             signingConfig signingConfigs.debug
-            applicationId "com.megalabs.smartweather.develop"
             versionName defaultConfig.versionName + "-DEVELOP"
 
             resValue "string", "app_name", "SmartWeather-Dev"

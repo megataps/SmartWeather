@@ -13,7 +13,7 @@ class ApplicationTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        Assert.assertEquals("com.megalabs.smartweather.develop", appContext.packageName)
+        Assert.assertEquals("com.megalabs.smartweather", appContext.packageName)
     }
 
 }
