@@ -209,8 +209,8 @@ More detail at: https://github.com/scottyab/rootbeer
   </tr>
 
   <tr>
-    <td>No Internet Diaglo</td>
-     <td>Error Diaglo</td>
+    <td>No Internet Dialog</td>
+     <td>Error Dialog</td>
   </tr>
   <td><img src="https://user-images.githubusercontent.com/7032500/93730802-74e55500-fbf4-11ea-843e-6df697b25a8d.png" width=400 height=711></td>
     <td><img src="https://user-images.githubusercontent.com/7032500/93731310-a101d580-fbf6-11ea-8f02-cd93188d51dd.png" width=400 height=711></td>
