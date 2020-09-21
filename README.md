@@ -99,6 +99,10 @@ Example:
 
 <br>
 
+### Unit testing
+
+### Instrumented testing
+
 # Main Libraries Used
 
 ## Development
@@ -171,7 +175,14 @@ More detail at: https://github.com/scottyab/rootbeer
     ./build.sh prod
     ```
 
-- Output files are in: SmartWeather/build/outputs/apk folder
+- Output:
+    - Apk: *SmartWeather/build/outputs/apk*
+    - UnitTest Report: *SmartWeather/build/outputs/reports/test*
+        - **SmartWeather/app/build/reports/tests/testDevDebugUnitTest/index.html**
+        - **SmartWeather/app/build/reports/tests/testProdReleaseUnitTest/index.html**
+    - AndroidTest Report: *SmartWeather/build/outputs/reports/androidTests*
+        - **SmartWeather/app/build/reports/androidTests/connected/flavors/DEV/index.html**
+        - **SmartWeather/app/build/reports/androidTests/connected/flavors/PROD/index.html**
 
 ## Deploy: Install to device:
 
