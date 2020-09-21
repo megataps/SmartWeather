@@ -187,17 +187,35 @@ More detail at: https://github.com/scottyab/rootbeer
     ./install.sh prod release
     ```
 
-#Screenshots
-![Screenshot_1600658348](https://user-images.githubusercontent.com/7032500/93730828-89c1e880-fbf4-11ea-8f54-7dbadf355a0e.png)
+<br>
 
-![Screenshot_1600658345](https://user-images.githubusercontent.com/7032500/93730836-90506000-fbf4-11ea-812c-70f76d2c76e5.png)
+# Screenshots
 
-![Screenshot_1600658359](https://user-images.githubusercontent.com/7032500/93730817-82024400-fbf4-11ea-82bf-1bd3bf3d801f.png)
+<table>
+  <tr>
+    <td>Default screen</td>
+     <td>Search result</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/7032500/93730828-89c1e880-fbf4-11ea-8f54-7dbadf355a0e.png" width=400 height=711></td>
+    <td><img src="https://user-images.githubusercontent.com/7032500/93730817-82024400-fbf4-11ea-82bf-1bd3bf3d801f.png" width=400 height=711></td>
+  </tr>
+  <tr>
+    <td>Input not valid</td>
+     <td>Item not found</td>
+  </tr>
+  <td><img src="https://user-images.githubusercontent.com/7032500/93730796-6b5bed00-fbf4-11ea-8c80-d157f4af561a.png" width=400 height=711></td>
+    <td><img src="https://user-images.githubusercontent.com/7032500/93730811-7c0c6300-fbf4-11ea-8549-6ecf33ab0217.png" width=400 height=711></td>
+  </tr>
 
-![Screenshot_1600658551](https://user-images.githubusercontent.com/7032500/93730796-6b5bed00-fbf4-11ea-8c80-d157f4af561a.png) | 
+  <tr>
+    <td>No Internet Diaglo</td>
+     <td>Error Diaglo</td>
+  </tr>
+  <td><img src="https://user-images.githubusercontent.com/7032500/93730802-74e55500-fbf4-11ea-843e-6df697b25a8d.png" width=400 height=711></td>
+    <td><img src="https://user-images.githubusercontent.com/7032500/93731310-a101d580-fbf6-11ea-8f02-cd93188d51dd.png" width=400 height=711></td>
+  </tr>
+ </table>
 
-![Screenshot_1600658422](https://user-images.githubusercontent.com/7032500/93730811-7c0c6300-fbf4-11ea-8549-6ecf33ab0217.png) 
-
-![Screenshot_1600658442](https://user-images.githubusercontent.com/7032500/93730802-74e55500-fbf4-11ea-843e-6df697b25a8d.png)
 
 
