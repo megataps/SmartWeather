@@ -213,7 +213,7 @@ This simple app uses Gradle to build and deploy. But keep in mind that, It's sho
 ## <a name="build"></a>Build
  - Build for Dev:
     ```
-    ./build.sh qc
+    ./build.sh dev
     ```
 
 - Build for Production
