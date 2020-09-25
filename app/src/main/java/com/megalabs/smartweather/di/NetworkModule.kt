@@ -65,13 +65,21 @@ val networkModule = module {
         }.build()
     }
 
+//    single {
+//        Retrofit.Builder()
+//            .baseUrl(Constants.getApiUrl())
+//            .client(get())
+//            .addCallAdapterFactory(
+//                RxJava3CallAdapterFactory.createWithScheduler(
+//                Schedulers.io()))
+//            .addConverterFactory(MoshiConverterFactory.create(get()))
+//            .build()
+//    }
+
     single {
         Retrofit.Builder()
             .baseUrl(Constants.getApiUrl())
             .client(get())
-            .addCallAdapterFactory(
-                RxJava3CallAdapterFactory.createWithScheduler(
-                Schedulers.io()))
             .addConverterFactory(MoshiConverterFactory.create(get()))
             .build()
     }

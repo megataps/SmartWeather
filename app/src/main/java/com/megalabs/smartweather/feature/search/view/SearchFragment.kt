@@ -10,7 +10,7 @@ import arrow.core.Either
 import com.jakewharton.rxbinding4.view.clicks
 import com.megalabs.smartweather.R
 import com.megalabs.smartweather.feature.base.BaseFragment
-import com.megalabs.smartweather.feature.search.viewmodel.SearchViewModel
+import com.megalabs.smartweather.feature.search.viewmodel.CoroutineSearchViewModel
 import com.megalabs.smartweather.model.DailyItem
 import io.reactivex.rxjava3.kotlin.plusAssign
 import io.reactivex.rxjava3.kotlin.subscribeBy
@@ -25,7 +25,9 @@ class SearchFragment: BaseFragment(R.layout.fragment_search), SearchAdapterListe
     }
 
     private lateinit var searchAdapter: SearchAdapter
-    private val viewModel : SearchViewModel by viewModel()
+//    private val viewModel : SearchViewModel by viewModel()
+    private val viewModel : CoroutineSearchViewModel by viewModel()
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
