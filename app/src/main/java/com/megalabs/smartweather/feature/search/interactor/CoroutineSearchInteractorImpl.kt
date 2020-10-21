@@ -4,6 +4,7 @@ import com.megalabs.smartweather.app.Constants
 import com.megalabs.smartweather.data.repository.CoroutineSearchRepository
 import com.megalabs.smartweather.feature.base.BaseInteractor
 import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
@@ -20,6 +21,9 @@ class CoroutineSearchInteractorImpl(
         searchCriteriaMap["cnt"] = "16"
         searchCriteriaMap["appid"] = Constants.getApiAppId()
 
+        Timber.e("LLLNNN>>>>CoroutineSearchInteractorImpl>>>>${Thread.currentThread().name} has run.")
+        delay(1000 * 5)
         searchRepository.getDailyForecastAsync(searchCriteriaMap)
+
     }
 }

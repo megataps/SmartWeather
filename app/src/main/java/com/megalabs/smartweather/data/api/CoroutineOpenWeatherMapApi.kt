@@ -2,6 +2,7 @@ package com.megalabs.smartweather.data.api
 
 import com.megalabs.smartweather.model.DailyForecast
 import kotlinx.coroutines.Deferred
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
 
