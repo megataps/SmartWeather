@@ -33,7 +33,7 @@ class SearchFragment: BaseFragment(R.layout.fragment_search), SearchAdapterListe
         searchView.isIconified = true
         searchView.isIconified = false
 
-        searchAdapter = SearchAdapter(this.context, this)
+        searchAdapter = SearchAdapter(requireContext(), this)
         val linearLayoutManager = LinearLayoutManager(this.context)
         searchRecyclerView.apply {
             layoutManager = linearLayoutManager

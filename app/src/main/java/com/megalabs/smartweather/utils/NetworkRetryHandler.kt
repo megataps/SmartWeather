@@ -40,7 +40,6 @@ class NetworkRetryHandler: KoinComponent {
 
     }
 
-    @SuppressLint("PrivateApi")
     private fun getRunningActivity(): AppCompatActivity? {
 
         try {

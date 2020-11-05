@@ -22,10 +22,6 @@ import timber.log.Timber
 
 abstract class BaseFragment(@LayoutRes val layoutResId: Int) : Fragment()  {
 
-    val context: Context
-        @JvmName("getNonNullContext")
-        get() = requireContext()
-
     protected var subscriptions = CompositeDisposable()
     private val progressDialog: MaterialDialog by lazy { MaterialDialog(requireContext()) }
 
